@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Cai\' blog', // 设置网站标题
     description: '记录、分享前端技术',
-    base: '',
+    base: '/',
     // theme: '@vuepress/blog',
     themeConfig: {
         lastUpdated: 'Last Updated', // string | boolean
