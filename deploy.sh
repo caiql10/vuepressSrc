@@ -4,7 +4,7 @@
 set -e
  
 # 生成静态文件， npm run docs:build
-npm run docs:build
+npm run build
 rm -rf ../vueDist/dist/*
 
 # 将build生成的dist目录拷贝至上一层目录中
@@ -17,7 +17,9 @@ cd ../vueDist/dist
 git init
 git add -A
 git commit -m 'deploy'
-git branch -M main
+#git branch -M main
 
 # 如果你想要部署到 https://USERNAME.github.io
 git push -f git@github.com:caiql10/cql.git.io.git main
+
+cd -
